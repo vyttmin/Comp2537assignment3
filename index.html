@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Assignemnt 3</title>
 
   <!-- imports axios  -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -25,14 +26,26 @@
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
   <!-- my files imports -->
-  <script src="index.js"></script>
+  <script src="pokemon.js"></script>
   <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-  
-  <div id="pokeCards"></div>
 
+  <!-- Checkboxes -->
+  <div class="container-sm themed-container text-center" id="typeFilters"></div>
+
+  <!-- Pokemon count -->
+  <div class="container themed-container text-center">
+    <div id="pokeCount"></div>
+  </div>
+
+  <!-- Pokemon cards -->
+  <div class="container themed-container text-center">
+    <div id="pokeCards"></div>
+  </div>
+
+  <!-- Modal -->
   <div id="pokeModal" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -52,9 +65,9 @@
     </div>
   </div>
 
+  <!-- pagination -->
+  <div id="pagination"></div>
 
-    <div id="pagination"></div>
-  
 </body>
 
 </html>
